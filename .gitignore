@@ -3,5 +3,5 @@
 .git
 .env
 package-lock.json
-test
+tests
 node_modules
