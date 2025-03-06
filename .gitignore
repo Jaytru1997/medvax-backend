@@ -5,3 +5,5 @@
 package-lock.json
 tests
 node_modules
+coverage
+dist
