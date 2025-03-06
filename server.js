@@ -8,9 +8,7 @@ const morgan = require("morgan");
 const medicationRoutes = require("./src/routes/medicationRoutes");
 const bookingRoutes = require("./src/routes/bookingRoutes");
 const paymentRoutes = require("./src/routes/paymentRoutes");
-
-
-
+const { swaggerSpec, swaggerUi } = require("./src/config/swagger");
 
 // Load environment variables
 dotenv.config();
@@ -28,6 +26,7 @@ app.use(helmet());
 app.use(morgan("dev"));
 
 // Routes
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use("/api/auth", authRoutes);
 app.use("/api/medications", medicationRoutes);
 app.use("/api/bookings", bookingRoutes);
