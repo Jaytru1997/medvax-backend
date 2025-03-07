@@ -27,6 +27,8 @@ The MedVax backend is a Node.js (Express) and MongoDB-based API supporting a tel
 - **Performance Optimization**:
   - Database indexing for frequently queried fields.
   - No Redis caching (as per project constraints).
+- **Job Schedule**:
+  - Automate reminders and special mailing lists with job schedule.
 - **Feedback Loop**:
   - Users can submit feedback.
   - Admins can retrieve feedback for evaluation.
@@ -40,11 +42,12 @@ The MedVax backend is a Node.js (Express) and MongoDB-based API supporting a tel
 - **Backend**: Node.js (Express)
 - **Database**: MongoDB (Mongoose ORM)
 - **Authentication**: JWT
-- **Payments**: Flutterwave/Paystack
+- **Payments**: Flutterwave
 - **Chatbot**: Dialogflow
-- **Messaging**: Twilio (SMS/WhatsApp), SendGrid (Email)
+- **Messaging**: Twilio (SMS/WhatsApp), Nodemailer (Email)
 - **API Documentation**: Swagger
 - **Error Logging**: Winston/Morgan
+- **Job Scheduling**: [Node-Cron-JS](https://www.npmjs.com/package/node-cron-js)
 
 ## Installation & Setup
 
@@ -93,7 +96,7 @@ MAIL_ADDR=your_email
 MAIL_SECRET=your_password
 MAIL_DISPLAYNAME=Display_Name
 
-CALCOM_API_KEY
+CALCOM_API_KEY=your_calcom_api_key
 
 JWT_SECRET=your_secret_key
 JWT_EXPIRES_IN=30d
@@ -174,4 +177,4 @@ Contributions are closed to the public! Only active company staff/development te
 
 ## License
 
-This project is licensed under the Lesous Technology LTD's Software Production License.
+This project is licensed under the [Lesous Technology LTD](https://lesous.ng) Software Production License.
