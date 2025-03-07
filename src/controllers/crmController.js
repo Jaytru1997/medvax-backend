@@ -1,10 +1,10 @@
 const CRMLog = require("../models/CRMLog");
 const twilio = require("twilio");
-const sgMail = require("@sendgrid/mail");
+// const sgMail = require("@sendgrid/mail");
 const User = require("../models/User");
 const { sendEmail } = require("../services/emailService");
 
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+// sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 exports.logInteraction = async (req, res) => {
   try {

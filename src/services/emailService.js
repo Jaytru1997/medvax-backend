@@ -142,7 +142,7 @@ exports.sendEmail = async (options) => {
   let _template = template(options);
 
   // Process.envure nodemailer transport
-  if (process.env.ENVIRONMENT === "local") {
+  if (process.env.NODE_ENV === "development") {
     transporter = createTransport({
       host: process.env.MAILTRAP_HOST,
       port: process.env.MAILTRAP_PORT,

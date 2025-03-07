@@ -1018,7 +1018,7 @@ END CONFIG STYLES
                                                                                         <p>${
                                                                                           process
                                                                                             .env
-                                                                                            .SITE_NAME
+                                                                                            .APP_NAME
                                                                                         }</p>
                                                                                     </td>
                                                                                 </tr>

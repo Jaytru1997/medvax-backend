@@ -16,7 +16,7 @@ exports.createPaymentLink = async (req, res) => {
       currency: "NGN", // Currency in Naira
       email: email,
       phone_number: phone_number,
-      redirect_url: `${process.env.BASE_URL}/payment-success`,
+      redirect_url: `${process.env.URL}/payment-success`,
       order_id: "your_order_id", // Optional if you want to associate with orders
       description: description,
     };
@@ -34,12 +34,10 @@ exports.createPaymentLink = async (req, res) => {
         .json({ message: "Error creating payment link", error: response });
     }
   } catch (error) {
-    res
-      .status(500)
-      .json({
-        message: "Error processing payment",
-        error: error.response?.data,
-      });
+    res.status(500).json({
+      message: "Error processing payment",
+      error: error.response?.data,
+    });
   }
 };
 

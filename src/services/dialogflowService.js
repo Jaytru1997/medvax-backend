@@ -6,10 +6,10 @@ require("dotenv").config();
 
 const projectId = process.env.DIALOGFLOW_PROJECT_ID;
 const sessionClient = new dialogflow.SessionsClient({
-  keyFilename: path.join(__dirname, "../config/medvax-dialogflow-key.json"),
+  keyFilename: path.join(__dirname, process.env.DIALOGFLOW_KEY_PATH),
 });
 const intentsClient = new dialogflow.IntentsClient({
-  keyFilename: path.join(__dirname, "../config/medvax-dialogflow-key.json"),
+  keyFilename: path.join(__dirname, process.env.DIALOGFLOW_KEY_PATH),
 });
 
 /**
