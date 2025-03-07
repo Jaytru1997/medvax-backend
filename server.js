@@ -8,6 +8,12 @@ const morgan = require("morgan");
 const medicationRoutes = require("./src/routes/medicationRoutes");
 const bookingRoutes = require("./src/routes/bookingRoutes");
 const paymentRoutes = require("./src/routes/paymentRoutes");
+const crmRoutes = require("./src/routes/crmRoutes");
+const chatbotRoutes = require("./src/routes/chatbotRoutes");
+const adminRoutes = require("./routes/adminRoutes");
+
+const logger = require("./src/services/logger");
+const errorHandler = require("./src/middleware/errorHandler");
 const { swaggerSpec, swaggerUi } = require("./src/config/swagger");
 
 // Load environment variables
@@ -18,6 +24,12 @@ connectDB();
 
 // Initialize app
 const app = express();
+
+// Logging Requests
+app.use((req, res, next) => {
+  logger.info(`${req.method} ${req.url}`);
+  next();
+});
 
 // Middleware
 app.use(express.json());
@@ -31,6 +43,12 @@ app.use("/api/auth", authRoutes);
 app.use("/api/medications", medicationRoutes);
 app.use("/api/bookings", bookingRoutes);
 app.use("/api/payments", paymentRoutes);
+app.use("/api/crm", crmRoutes);
+app.use("/api/chatbot", chatbotRoutes);
+app.use("/api/admin", adminRoutes);
+
+// Error Handling
+app.use(errorHandler);
 
 // Start server
 const PORT = process.env.PORT || 5000;

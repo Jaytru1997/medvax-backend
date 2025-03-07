@@ -1,4 +1,5 @@
 const express = require("express");
+const { checkRole } = require("../middleware/rbacMiddleware");
 const {
   getMedications,
   getMedicationById,
@@ -74,7 +75,7 @@ router.get("/:id", getMedicationById);
  *       500:
  *         description: Server error
  */
-router.post("/", authMiddleware, addMedication);
+router.post("/", authMiddleware, checkRole(["admin"]), addMedication);
 
 /**
  * @swagger
@@ -110,7 +111,7 @@ router.post("/", authMiddleware, addMedication);
  *       500:
  *         description: Server error
  */
-router.put("/:id", authMiddleware, updateMedication);
+router.put("/:id", authMiddleware, checkRole(["admin"]), updateMedication);
 
 /**
  * @swagger
@@ -131,6 +132,6 @@ router.put("/:id", authMiddleware, updateMedication);
  *       500:
  *         description: Server error
  */
-router.delete("/:id", authMiddleware, deleteMedication);
+router.delete("/:id", authMiddleware, checkRole(["admin"]), deleteMedication);
 
 module.exports = router;
