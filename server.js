@@ -10,10 +10,10 @@ const bookingRoutes = require("./src/routes/bookingRoutes");
 const paymentRoutes = require("./src/routes/paymentRoutes");
 const crmRoutes = require("./src/routes/crmRoutes");
 const chatbotRoutes = require("./src/routes/chatbotRoutes");
-const adminRoutes = require("./routes/adminRoutes");
+const adminRoutes = require("./src/routes/adminRoutes");
 
 const logger = require("./src/services/logger");
-const errorHandler = require("./src/middleware/errorHandler");
+// const errorHandler = require("./src/middleware/errorHandler");
 const { swaggerSpec, swaggerUi } = require("./src/config/swagger");
 
 // Load environment variables
@@ -48,7 +48,7 @@ app.use("/api/chatbot", chatbotRoutes);
 app.use("/api/admin", adminRoutes);
 
 // Error Handling
-app.use(errorHandler);
+// app.use(errorHandler);
 
 // Start server
 const PORT = process.env.PORT || 5000;

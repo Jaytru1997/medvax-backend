@@ -330,3 +330,11 @@
 {"level":"info","message":"Active proxy found: socks4://168.205.217.189:4145","timestamp":"2025-03-07T12:29:13.893Z"}
 {"level":"info","message":"Active proxy found: socks4://45.117.29.137:10888","timestamp":"2025-03-07T12:29:14.087Z"}
 {"level":"info","message":"Active proxy found: socks4://118.173.230.149:1080","timestamp":"2025-03-07T12:29:14.531Z"}
+{"level":"info","message":"GET /api-docs","timestamp":"2025-03-07T16:00:08.452Z"}
+{"level":"info","message":"GET /api-docs/","timestamp":"2025-03-07T16:00:08.631Z"}
+{"level":"info","message":"GET /api-docs/swagger-ui.css","timestamp":"2025-03-07T16:00:09.048Z"}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js","timestamp":"2025-03-07T16:00:09.068Z"}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js","timestamp":"2025-03-07T16:00:09.082Z"}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js","timestamp":"2025-03-07T16:00:09.096Z"}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png","timestamp":"2025-03-07T16:00:09.774Z"}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png","timestamp":"2025-03-07T16:00:11.593Z"}
