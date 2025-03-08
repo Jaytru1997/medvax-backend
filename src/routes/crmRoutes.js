@@ -1,6 +1,9 @@
 const express = require("express");
 const { logInteraction } = require("../controllers/crmController");
 const router = express.Router();
+const authMiddleware = require("../middleware/authMiddleware");
+const { checkRole } = require("../middleware/rbacMiddleware");
+const { access } = require("../config/access");
 
 /**
  * @swagger
@@ -27,6 +30,6 @@ const router = express.Router();
  *       500:
  *         description: Server error
  */
-router.post("/log", logInteraction);
+router.post("/log", authMiddleware, checkRole(access.all), logInteraction);
 
 module.exports = router;

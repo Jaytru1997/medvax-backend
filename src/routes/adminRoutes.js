@@ -1,5 +1,8 @@
 const express = require("express");
 const { trainChatbot } = require("../controllers/adminController");
+const authMiddleware = require("../middleware/authMiddleware");
+const { checkRole } = require("../middleware/rbacMiddleware");
+const { access } = require("../config/access");
 
 const router = express.Router();
 
@@ -30,6 +33,11 @@ const router = express.Router();
  *       500:
  *         description: Server error
  */
-router.post("/train-chatbot", trainChatbot); // Admin route to train chatbot
+router.post(
+  "/train-chatbot",
+  authMiddleware,
+  checkRole(access.admin),
+  trainChatbot
+); // Admin route to train chatbot
 
 module.exports = router;

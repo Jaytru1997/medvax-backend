@@ -5,6 +5,8 @@ const {
   cancelAppointment,
 } = require("../controllers/bookingController");
 const authMiddleware = require("../middleware/authMiddleware");
+const { checkRole } = require("../middleware/rbacMiddleware");
+const { access } = require("../config/access");
 
 const router = express.Router();
 
@@ -22,7 +24,7 @@ const router = express.Router();
  *       500:
  *         description: Server error
  */
-router.get("/slots", authMiddleware, getAvailableSlots);
+router.get("/slots", authMiddleware, checkRole(access.all), getAvailableSlots);
 
 /**
  * @swagger
@@ -47,7 +49,12 @@ router.get("/slots", authMiddleware, getAvailableSlots);
  *       500:
  *         description: Server error
  */
-router.post("/book", authMiddleware, bookAppointment);
+router.post(
+  "/book",
+  authMiddleware,
+  checkRole(access.patient),
+  bookAppointment
+);
 
 /**
  * @swagger
@@ -68,6 +75,11 @@ router.post("/book", authMiddleware, bookAppointment);
  *       500:
  *         description: Server error
  */
-router.delete("/cancel/:bookingId", authMiddleware, cancelAppointment);
+router.delete(
+  "/cancel/:bookingId",
+  authMiddleware,
+  checkRole(access.all),
+  cancelAppointment
+);
 
 module.exports = router;

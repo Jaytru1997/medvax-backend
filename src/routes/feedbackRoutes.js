@@ -4,7 +4,9 @@ const {
   getAllFeedback,
   getFeedbackAnalytics,
 } = require("../controllers/feedbackController");
+const authMiddleware = require("../middleware/authMiddleware");
 const { checkRole } = require("../middleware/rbacMiddleware");
+const { access } = require("../config/access");
 
 const router = express.Router();
 
@@ -31,7 +33,7 @@ const router = express.Router();
  *       500:
  *         description: Server error
  */
-router.post("/", submitFeedback);
+router.post("/", authMiddleware, checkRole(access.all), submitFeedback);
 
 /**
  * @swagger
@@ -45,7 +47,7 @@ router.post("/", submitFeedback);
  *       500:
  *         description: Server error
  */
-router.get("/", checkRole(["admin"]), getAllFeedback);
+router.get("/", authMiddleware, checkRole(access.admin), getAllFeedback);
 
 /**
  * @swagger
@@ -59,6 +61,11 @@ router.get("/", checkRole(["admin"]), getAllFeedback);
  *       500:
  *         description: Server error
  */
-router.get("/analytics", checkRole(["admin"]), getFeedbackAnalytics);
+router.get(
+  "/analytics",
+  authMiddleware,
+  checkRole(access.admin),
+  getFeedbackAnalytics
+);
 
 module.exports = router;

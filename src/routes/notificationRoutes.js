@@ -3,6 +3,9 @@ const {
   createNotification,
   getUserNotifications,
 } = require("../controllers/notificationController");
+const authMiddleware = require("../middleware/authMiddleware");
+const { checkRole } = require("../middleware/rbacMiddleware");
+const { access } = require("../config/access");
 
 const router = express.Router();
 
@@ -29,7 +32,7 @@ const router = express.Router();
  *       500:
  *         description: Server error
  */
-router.post("/", createNotification);
+router.post("/", authMiddleware, checkRole(access.all), createNotification);
 
 /**
  * @swagger
@@ -43,6 +46,6 @@ router.post("/", createNotification);
  *       500:
  *         description: Server error
  */
-router.get("/", getUserNotifications);
+router.get("/", authMiddleware, checkRole(access.all), getUserNotifications);
 
 module.exports = router;

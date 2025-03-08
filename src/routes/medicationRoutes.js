@@ -8,6 +8,7 @@ const {
   deleteMedication,
 } = require("../controllers/medicationController");
 const authMiddleware = require("../middleware/authMiddleware");
+const { access } = require("../config/access");
 
 const router = express.Router();
 
@@ -75,7 +76,7 @@ router.get("/:id", getMedicationById);
  *       500:
  *         description: Server error
  */
-router.post("/", authMiddleware, checkRole(["admin"]), addMedication);
+router.post("/", authMiddleware, checkRole(access.admin), addMedication);
 
 /**
  * @swagger
@@ -111,7 +112,7 @@ router.post("/", authMiddleware, checkRole(["admin"]), addMedication);
  *       500:
  *         description: Server error
  */
-router.put("/:id", authMiddleware, checkRole(["admin"]), updateMedication);
+router.put("/:id", authMiddleware, checkRole(access.admin), updateMedication);
 
 /**
  * @swagger
@@ -132,6 +133,11 @@ router.put("/:id", authMiddleware, checkRole(["admin"]), updateMedication);
  *       500:
  *         description: Server error
  */
-router.delete("/:id", authMiddleware, checkRole(["admin"]), deleteMedication);
+router.delete(
+  "/:id",
+  authMiddleware,
+  checkRole(access.admin),
+  deleteMedication
+);
 
 module.exports = router;
