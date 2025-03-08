@@ -1,6 +1,7 @@
 const Feedback = require("../models/Feedback");
+const { asyncWrapper } = require("../utils/async");
 
-exports.submitFeedback = async (req, res) => {
+exports.submitFeedback = asyncWrapper(async (req, res) => {
   try {
     const { rating, comment } = req.body;
     const feedback = await Feedback.create({
@@ -15,18 +16,18 @@ exports.submitFeedback = async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: "Error submitting feedback", error });
   }
-};
+});
 
-exports.getAllFeedback = async (req, res) => {
+exports.getAllFeedback = asyncWrapper(async (req, res) => {
   try {
     const feedbackList = await Feedback.find().populate("userId", "name email");
     res.status(200).json({ data: feedbackList });
   } catch (error) {
     res.status(500).json({ message: "Error fetching feedback", error });
   }
-};
+});
 
-exports.getFeedbackAnalytics = async (req, res) => {
+exports.getFeedbackAnalytics = asyncWrapper(async (req, res) => {
   try {
     const analytics = await Feedback.aggregate([
       {
@@ -44,4 +45,4 @@ exports.getFeedbackAnalytics = async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: "Error fetching analytics", error });
   }
-};
+});

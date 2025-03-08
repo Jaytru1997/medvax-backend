@@ -96,10 +96,12 @@ MAIL_ADDR=your_email
 MAIL_SECRET=your_password
 MAIL_DISPLAYNAME=Display_Name
 
+CALCOM_API_BASE="https://api.cal.com/v2"
 CALCOM_API_KEY=your_calcom_api_key
 
 JWT_SECRET=your_secret_key
-JWT_EXPIRES_IN=30d
+JWT_EXPIRES_IN=1d
+JWT_COOKIE_EXPIRES_IN=1
 
 DIALOGFLOW_PROJECT_ID=your_project_id
 DIALOGFLOW_KEY_PATH=./src/config/medvax-dialogflow-key.json

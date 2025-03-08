@@ -8,3 +8,12 @@ exports.checkRole = (roles) => {
     next();
   };
 };
+
+exports.restricttoOwner = (req, res, next) => {
+  if (req.user._id.toString() !== req.params.id) {
+    return res.status(403).json({
+      message: "Access Denied: Insufficient permissions to perform this action",
+    });
+  }
+  next();
+};

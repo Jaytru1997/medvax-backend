@@ -3,8 +3,9 @@ const {
   detectLanguage,
   translateText,
 } = require("../services/translateService");
+const { asyncWrapper } = require("../utils/async");
 
-exports.chatWithBot = async (req, res) => {
+exports.chatWithBot = asyncWrapper(async (req, res) => {
   try {
     const { message } = req.body;
     if (!message) {
@@ -31,4 +32,4 @@ exports.chatWithBot = async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: "Error processing chatbot request" });
   }
-};
+});

@@ -1,6 +1,9 @@
 const express = require("express");
 const { register, login } = require("../controllers/authController");
 const { check, validationResult } = require("express-validator");
+const authMiddleware = require("../middleware/authMiddleware");
+require("dotenv").config();
+const { blacklistToken } = require("../controllers/blacklistController");
 
 const router = express.Router();
 
@@ -90,5 +93,28 @@ router.post(
   },
   login
 );
+
+/**
+ * @swagger
+ * /api/auth/logout:
+ *   get:
+ *     summary: Logout a user
+ *     description: Logs out a user from the platform.
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Logged out successfully
+ *       401:
+ *         description: Unauthorized
+ */
+router.get("/logout", authMiddleware, async (req, res) => {
+  const token = req.headers.authorization.split(" ")[1];
+  // blacklist token
+  await blacklistToken(token);
+  return res
+    .status(200)
+    .json({ message: "Logged out successfully", redirect: process.env.URL });
+});
 
 module.exports = router;

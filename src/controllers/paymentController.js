@@ -1,4 +1,5 @@
 const Flutterwave = require("flutterwave-node-v3");
+const { asyncWrapper } = require("../utils/async");
 require("dotenv").config();
 
 const flw = new Flutterwave(
@@ -6,7 +7,7 @@ const flw = new Flutterwave(
   process.env.FLUTTERWAVE_PUBLIC_KEY
 );
 
-exports.createPaymentLink = async (req, res) => {
+exports.createPaymentLink = asyncWrapper(async (req, res) => {
   try {
     const { amount, email, phone_number, description } = req.body;
 
@@ -39,10 +40,10 @@ exports.createPaymentLink = async (req, res) => {
       error: error.response?.data,
     });
   }
-};
+});
 
 // Handle payment callback
-exports.paymentCallback = (req, res) => {
+exports.paymentCallback = asyncWrapper((req, res) => {
   const { status, tx_ref } = req.query;
 
   // You can use tx_ref to confirm payment in your database
@@ -51,4 +52,4 @@ exports.paymentCallback = (req, res) => {
   } else {
     return res.status(400).json({ message: "Payment failed" });
   }
-};
+});

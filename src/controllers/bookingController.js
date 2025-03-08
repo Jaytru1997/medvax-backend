@@ -1,10 +1,12 @@
 const axios = require("axios");
+require("dotenv").config();
+const { asyncWrapper } = require("../utils/async");
 
-const CALCOM_API_BASE = "https://api.cal.com/v2";
+const CALCOM_API_BASE = process.env.CALCOM_API_BASE;
 const CALCOM_API_KEY = process.env.CALCOM_API_KEY;
 
 // Get available appointment slots
-exports.getAvailableSlots = async (req, res) => {
+exports.getAvailableSlots = asyncWrapper(async (req, res) => {
   try {
     const { professionalId } = req.query;
 
@@ -25,10 +27,10 @@ exports.getAvailableSlots = async (req, res) => {
       .status(500)
       .json({ message: "Error fetching slots", error: error.response?.data });
   }
-};
+});
 
 // Book an appointment
-exports.bookAppointment = async (req, res) => {
+exports.bookAppointment = asyncWrapper(async (req, res) => {
   try {
     const { professionalId, userEmail, dateTime } = req.body;
 
@@ -48,24 +50,20 @@ exports.bookAppointment = async (req, res) => {
       }
     );
 
-    res
-      .status(201)
-      .json({
-        message: "Appointment booked successfully",
-        booking: response.data,
-      });
+    res.status(201).json({
+      message: "Appointment booked successfully",
+      booking: response.data,
+    });
   } catch (error) {
-    res
-      .status(500)
-      .json({
-        message: "Error booking appointment",
-        error: error.response?.data,
-      });
+    res.status(500).json({
+      message: "Error booking appointment",
+      error: error.response?.data,
+    });
   }
-};
+});
 
 // Cancel an appointment
-exports.cancelAppointment = async (req, res) => {
+exports.cancelAppointment = asyncWrapper(async (req, res) => {
   try {
     const { bookingId } = req.params;
 
@@ -81,11 +79,9 @@ exports.cancelAppointment = async (req, res) => {
       data: response.data,
     });
   } catch (error) {
-    res
-      .status(500)
-      .json({
-        message: "Error canceling appointment",
-        error: error.response?.data,
-      });
+    res.status(500).json({
+      message: "Error canceling appointment",
+      error: error.response?.data,
+    });
   }
-};
+});

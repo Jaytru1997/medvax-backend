@@ -1,32 +1,44 @@
-// const jwt = require("jsonwebtoken");
-
-// const authMiddleware = (req, res, next) => {
-//     const token = req.header("Authorization");
-//     if (!token) return res.status(401).json({ message: "Access denied" });
-
-//     try {
-//         const decoded = jwt.verify(token, process.env.JWT_SECRET);
-//         req.user = decoded;
-//         next();
-//     } catch (error) {
-//         res.status(401).json({ message: "Invalid token" });
-//     }
-// };
-
-// module.exports = authMiddleware;
 const jwt = require("jsonwebtoken");
+const { promisify } = require("util");
+const Blacklist = require("../models/Blacklist");
+const { asyncWrapper } = require("../utils/async");
 
-const authMiddleware = (req, res, next) => {
-    const token = req.header("x-auth-token");
-    if (!token) return res.status(401).json({ message: "No token, authorization denied" });
+const authMiddleware = asyncWrapper(async (req, res, next) => {
+  //get token from header
+  let token;
+  if (
+    req.headers.authorization &&
+    req.headers.authorization.startsWith("Bearer")
+  ) {
+    token = req.headers.authorization.split(" ")[1];
+  }
 
-    try {
-        const decoded = jwt.verify(token, process.env.JWT_SECRET);
-        req.user = decoded.user; // Attach the user info to the request object
-        next();
-    } catch (err) {
-        res.status(401).json({ message: "Token is not valid" });
-    }
-};
+  const isBlacklisted = await Blacklist.findOne({ token });
+  if (isBlacklisted) {
+    return res.status(403).send("Access denied. Token is invalidated.");
+  }
+
+  if (!token) {
+    return next(new AppError("You are not logged in!", 401));
+  }
+
+  //verify token
+  const decoded = await promisify(jwt.verify)(token, config.JWT_SECRET);
+
+  //check if user still exists
+  let currentUser = await User.findById(decoded.id);
+  if (!currentUser) {
+    return res.status(401).json({ message: "User no longer exists." });
+  }
+
+  //check if user changed password after the token was issued
+  if (currentUser.changedPasswordAfter(decoded.iat)) {
+    return res.status(401).json({ message: "User recently changed password!" });
+  }
+
+  //grant access to protected route
+  req.user = currentUser;
+  next();
+});
 
 module.exports = authMiddleware;

@@ -3,10 +3,11 @@ const twilio = require("twilio");
 // const sgMail = require("@sendgrid/mail");
 const User = require("../models/User");
 const { sendEmail } = require("../services/emailService");
+const { asyncWrapper } = require("../utils/async");
 
 // sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-exports.logInteraction = async (req, res) => {
+exports.logInteraction = asyncWrapper(async (req, res) => {
   try {
     const { userId, type, message } = req.body;
     const log = await CRMLog.create({ userId, type, message });
@@ -21,7 +22,7 @@ exports.logInteraction = async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: "Error logging interaction", error });
   }
-};
+});
 
 async function sendNotification(phone, message) {
   const client = twilio(process.env.TWILIO_SID, process.env.TWILIO_AUTH_TOKEN);

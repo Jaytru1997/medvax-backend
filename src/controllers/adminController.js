@@ -1,6 +1,6 @@
 const { trainDialogflow } = require("../services/dialogflowService");
-
-exports.trainChatbot = async (req, res) => {
+const { asyncWrapper } = require("../utils/async");
+exports.trainChatbot = asyncWrapper(async (req, res) => {
   try {
     const { intentName, trainingPhrases, responseText } = req.body;
 
@@ -17,4 +17,4 @@ exports.trainChatbot = async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: "Error training chatbot" });
   }
-};
+});

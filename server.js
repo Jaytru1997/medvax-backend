@@ -13,7 +13,6 @@ const chatbotRoutes = require("./src/routes/chatbotRoutes");
 const adminRoutes = require("./src/routes/adminRoutes");
 
 const logger = require("./src/services/logger");
-// const errorHandler = require("./src/middleware/errorHandler");
 const { swaggerSpec, swaggerUi } = require("./src/config/swagger");
 
 // Load environment variables
@@ -38,7 +37,6 @@ app.use(helmet());
 app.use(morgan("dev"));
 
 // Routes
-app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use("/api/auth", authRoutes);
 app.use("/api/medications", medicationRoutes);
 app.use("/api/bookings", bookingRoutes);
@@ -47,8 +45,8 @@ app.use("/api/crm", crmRoutes);
 app.use("/api/chatbot", chatbotRoutes);
 app.use("/api/admin", adminRoutes);
 
-// Error Handling
-// app.use(errorHandler);
+// Swagger Docs
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 // Start server
 const PORT = process.env.PORT || 5000;
