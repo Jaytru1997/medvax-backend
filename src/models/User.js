@@ -9,7 +9,7 @@ const UserSchema = new mongoose.Schema({
   phone: { type: String },
   role: {
     type: String,
-    enum: ["admin", "doctor", "patient"],
+    enum: ["admin", "doctor", "patient", "manager"],
     default: "patient",
   },
   passwordChangedAt: Date,
