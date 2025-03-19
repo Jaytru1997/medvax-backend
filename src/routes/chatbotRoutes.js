@@ -5,9 +5,17 @@ const router = express.Router();
 
 /**
  * @swagger
+ * tags:
+ *   name: Chatbot
+ *   description: Chat with MedVax AI
+ */
+
+/**
+ * @swagger
  * /api/chatbot/chat:
  *   post:
  *     summary: Chat with the bot
+ *     tags: [Chatbot]
  *     description: Allows a user to chat with the bot.
  *     requestBody:
  *       required: true

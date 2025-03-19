@@ -11,9 +11,17 @@ const router = express.Router();
 
 /**
  * @swagger
+ * tags:
+ *   name: Notification
+ *   description: Notification management
+ */
+
+/**
+ * @swagger
  * /api/notifications:
  *   post:
  *     summary: Create a notification
+ *     tags: [Notification]
  *     description: Create a notification for a user.
  *     requestBody:
  *       required: true
@@ -39,6 +47,7 @@ router.post("/", authMiddleware, checkRole(access.all), createNotification);
  * /api/notifications:
  *   get:
  *     summary: Get user notifications
+ *     tags: [Notification]
  *     description: Get all notifications for a user.
  *     responses:
  *       200:

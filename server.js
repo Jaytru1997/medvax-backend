@@ -11,6 +11,7 @@ const paymentRoutes = require("./src/routes/paymentRoutes");
 const crmRoutes = require("./src/routes/crmRoutes");
 const chatbotRoutes = require("./src/routes/chatbotRoutes");
 const adminRoutes = require("./src/routes/adminRoutes");
+const blogRoutes = require("./src/routes/blogRoutes");
 
 const logger = require("./src/services/logger");
 const { swaggerSpec, swaggerUi } = require("./src/config/swagger");
@@ -44,6 +45,7 @@ app.use("/api/payments", paymentRoutes);
 app.use("/api/crm", crmRoutes);
 app.use("/api/chatbot", chatbotRoutes);
 app.use("/api/admin", adminRoutes);
+app.use("/api/blog", blogRoutes);
 
 // Swagger Docs
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));

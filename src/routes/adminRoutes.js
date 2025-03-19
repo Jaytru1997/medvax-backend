@@ -8,9 +8,17 @@ const router = express.Router();
 
 /**
  * @swagger
+ * tags:
+ *   name: Admin
+ *   description: Admin management
+ */
+
+/**
+ * @swagger
  * /api/admin/train-chatbot:
  *   post:
  *     summary: Train chat bot
+ *     tags: [Admin]
  *     description: Allows admin to train medvax chat bot.
  *     requestBody:
  *       required: true

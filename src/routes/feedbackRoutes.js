@@ -12,9 +12,17 @@ const router = express.Router();
 
 /**
  * @swagger
+ * tags:
+ *   name: Feedback
+ *   description: Feedback management and analytics
+ */
+
+/**
+ * @swagger
  * /api/feedback:
  *   post:
  *     summary: Submit feedback
+ *     tags: [Feedback]
  *     description: Submit feedback for a user.
  *     requestBody:
  *       required: true
@@ -40,6 +48,7 @@ router.post("/", authMiddleware, checkRole(access.all), submitFeedback);
  * /api/feedback:
  *   get:
  *     summary: Get all feedback
+ *     tags: [Feedback]
  *     description: Get all feedback submitted by users.
  *     responses:
  *       200:
@@ -54,6 +63,7 @@ router.get("/", authMiddleware, checkRole(access.admin), getAllFeedback);
  * /api/feedback/analytics:
  *   get:
  *     summary: Get feedback analytics
+ *     tags: [Feedback]
  *     description: Get feedback analytics for admin users.
  *     responses:
  *       200:

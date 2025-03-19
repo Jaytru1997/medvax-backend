@@ -12,9 +12,17 @@ const router = express.Router();
 
 /**
  * @swagger
+ * tags:
+ *   name: Booking
+ *   description: Booking management
+ */
+
+/**
+ * @swagger
  * /api/bookings/slots:
  *   get:
  *     summary: Get available slots
+ *     tags: [Booking]
  *     description: Allows a user to get available slots.
  *     requestBody:
  *       required: true
@@ -31,6 +39,7 @@ router.get("/slots", authMiddleware, checkRole(access.all), getAvailableSlots);
  * /api/bookings/book:
  *   post:
  *     summary: Book an appointment
+ *     tags: [Booking]
  *     description: Allows a user to book an appointment.
  *     requestBody:
  *       required: true
@@ -61,6 +70,7 @@ router.post(
  * /api/bookings/cancel/{bookingId}:
  *   delete:
  *     summary: Cancel an appointment
+ *     tags: [Booking]
  *     description: Allows a user to cancel an appointment.
  *     parameters:
  *       - in: path

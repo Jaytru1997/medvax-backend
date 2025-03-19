@@ -9,9 +9,17 @@ const router = express.Router();
 
 /**
  * @swagger
+ * tags:
+ *   name: Payments
+ *   description: Payments management
+ */
+
+/**
+ * @swagger
  * /api/payments/create-link:
  *   post:
  *     summary: Create a payment link
+ *     tags: [Payments]
  *     description: Allows a user to create a payment link.
  *     requestBody:
  *       required: true
@@ -37,6 +45,7 @@ router.post("/create-link", authMiddleware, createPaymentLink);
  * /api/payments/callback:
  *   get:
  *     summary: Payment callback
+ *     tags: [Payments]
  *     description: Payment callback URL.
  *     responses:
  *       200:

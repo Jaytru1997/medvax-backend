@@ -4,7 +4,6 @@ const crypto = require("crypto");
 const jwt = require("jsonwebtoken");
 const { asyncWrapper } = require("../utils/async");
 const { sendEmail } = require("../services/emailService");
-const { header } = require("express-validator");
 
 exports.login = asyncWrapper(async (req, res) => {
   try {

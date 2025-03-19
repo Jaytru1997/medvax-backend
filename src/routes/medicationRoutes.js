@@ -13,10 +13,18 @@ const { access } = require("../config/access");
 const router = express.Router();
 
 /**
+ * @swagger
+ * tags:
+ *   name: Medications
+ *   description: Medications management
+ */
+
+/**
  *  @swagger
  * /api/medications:
  *   get:
  *     summary: Get all medications
+ *     tags: [Medications]
  *     description: Fetch all medications from the database.
  *     responses:
  *       200:
@@ -31,6 +39,7 @@ router.get("/", getMedications);
  * /api/medications/{id}:
  *   get:
  *     summary: Get medication by ID
+ *     tags: [Medications]
  *     description: Fetch a medication from the database using the ID.
  *     parameters:
  *       - in: path
@@ -54,6 +63,7 @@ router.get("/:id", getMedicationById);
  * /api/medications:
  *   post:
  *     summary: Add a new medication
+ *     tags: [Medications]
  *     description: Add a new medication to the database.
  *     requestBody:
  *       required: true
@@ -83,6 +93,7 @@ router.post("/", authMiddleware, checkRole(access.admin), addMedication);
  * /api/medications/{id}:
  *   put:
  *     summary: Update medication
+ *     tags: [Medications]
  *     description: Update medication in the database.
  *     parameters:
  *       - in: path
@@ -119,6 +130,7 @@ router.put("/:id", authMiddleware, checkRole(access.admin), updateMedication);
  * /api/medications/{id}:
  *   delete:
  *     summary: Delete medication
+ *     tags: [Medications]
  *     description: Delete medication from the database.
  *     parameters:
  *       - in: path

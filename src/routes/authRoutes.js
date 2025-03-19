@@ -9,9 +9,17 @@ const router = express.Router();
 
 /**
  * @swagger
+ * tags:
+ *   name: Authentication
+ *   description: User Authentication management
+ */
+
+/**
+ * @swagger
  * /api/auth/register:
  *   post:
  *     summary: Register a new user
+ *     tags: [Authentication]
  *     description: Allows a user to register on the platform.
  *     requestBody:
  *       required: true
@@ -57,6 +65,7 @@ router.post(
  * /api/auth/login:
  *   post:
  *     summary: Login a user
+ *     tags: [Authentication]
  *     description: Allows a user to login on the platform.
  *     requestBody:
  *       required: true
@@ -99,6 +108,7 @@ router.post(
  * /api/auth/logout:
  *   get:
  *     summary: Logout a user
+ *     tags: [Authentication]
  *     description: Logs out a user from the platform.
  *     security:
  *       - bearerAuth: []

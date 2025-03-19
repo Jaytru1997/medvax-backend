@@ -7,9 +7,17 @@ const { access } = require("../config/access");
 
 /**
  * @swagger
+ * tags:
+ *   name: CRM
+ *   description: CRM management and logging
+ */
+
+/**
+ * @swagger
  * /api/crm/log:
  *   post:
  *     summary: Log an interaction
+ *     tags: [CRM]
  *     description: Allows a user to log an interaction.
  *     requestBody:
  *       required: true
