@@ -78,6 +78,9 @@ router.get("/:id", getMedicationById);
  *                 type: string
  *               price:
  *                 type: number
+ *               image:
+ *                 type: string
+ *                 description: Image URL
  *     responses:
  *       201:
  *         description: Medication added successfully
@@ -115,6 +118,9 @@ router.post("/", authMiddleware, checkRole(access.admin), addMedication);
  *                 type: string
  *               price:
  *                 type: number
+ *               image:
+ *                 type: string
+ *                 description: Image URL
  *     responses:
  *       200:
  *         description: Medication updated successfully

@@ -21,6 +21,8 @@
     "dialogflow": "^4.0.3",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "express-fileupload": "^1.5.2",
+    "express-rate-limit": "^7.5.1",
     "express-validator": "^7.2.1",
     "flutterwave-node-v3": "^1.1.15",
     "geoip-lite": "^1.4.10",
@@ -37,6 +39,7 @@
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1",
     "twilio": "^5.4.5",
+    "uuid": "^11.1.0",
     "winston": "^3.17.0",
     "winston-daily-rotate-file": "^5.0.0"
   },

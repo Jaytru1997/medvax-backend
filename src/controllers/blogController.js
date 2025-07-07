@@ -1,17 +1,25 @@
 const Blog = require("../models/Blog");
+const { saveFile } = require("../utils/file");
+const fs = require("fs");
 
 // Create a new blog post
 exports.createPost = async (req, res) => {
   try {
-    const { title, content, categories, tags, language } = req.body;
+    const { title, content, category, language, excerpt } = req.body;
+    const file = req.files.banner;
+    //save file to public folder then return string
+    const banner = await saveFile(file, "blog-banners");
+    console.log(banner);
+
     const author = req.user.id;
     const newPost = new Blog({
       title,
       content,
       author,
-      categories,
-      tags,
-      language,
+      category: category.toLowerCase() || "other",
+      excerpt,
+      banner,
+      language: language.toLowerCase() || "en",
     });
 
     await newPost.save();
@@ -48,10 +56,18 @@ exports.getPostById = async (req, res) => {
 // Update a blog post
 exports.updatePost = async (req, res) => {
   try {
-    const { title, content, categories, tags, language } = req.body;
+    const { title, content, category, language, excerpt } = req.body;
+    const file = req.files.banner;
+    // delete old banner if it exists
+    const oldPost = await Blog.findById(req.params.id);
+    if (oldPost.banner) {
+      fs.unlinkSync(oldPost.banner);
+    }
+    const banner = await saveFile(file, "blog-banners");
+
     const updatedPost = await Blog.findByIdAndUpdate(
       req.params.id,
-      { title, content, categories, tags, language, updatedAt: Date.now() },
+      { title, content, category, language, excerpt, updatedAt: Date.now() },
       { new: true }
     );
 
@@ -72,34 +88,6 @@ exports.deletePost = async (req, res) => {
       return res.status(404).json({ message: "Post not found" });
 
     res.status(200).json({ message: "Post deleted" });
-  } catch (error) {
-    res.status(500).json({ message: "Server error", error });
-  }
-};
-
-// Add a comment to a blog post
-exports.addComment = async (req, res) => {
-  try {
-    const { text } = req.body;
-    const post = await Blog.findById(req.params.id);
-    if (!post) return res.status(404).json({ message: "Post not found" });
-
-    post.comments.push({ user: req.user.id, text });
-    await post.save();
-
-    res.status(201).json({ message: "Comment added", post });
-  } catch (error) {
-    res.status(500).json({ message: "Server error", error });
-  }
-};
-
-// Get comments for a post
-exports.getComments = async (req, res) => {
-  try {
-    const post = await Blog.findById(req.params.id);
-    if (!post) return res.status(404).json({ message: "Post not found" });
-
-    res.status(200).json(post.comments);
   } catch (error) {
     res.status(500).json({ message: "Server error", error });
   }

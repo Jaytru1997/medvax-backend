@@ -16,35 +16,20 @@ const BlogSchema = new mongoose.Schema(
       ref: "User",
       required: true,
     },
-    categories: {
-      type: [String],
-      default: [],
+    excerpt: {
+      type: String,
     },
-    tags: {
-      type: [String],
-      default: [],
+    banner: {
+      type: String,
+    },
+    category: {
+      type: String,
     },
     language: {
       type: String,
       enum: ["en", "fr", "es", "de", "ha", "yo", "ig"], // Example languages
       default: "en",
     },
-    comments: [
-      {
-        user: {
-          type: mongoose.Schema.Types.ObjectId,
-          ref: "User",
-        },
-        text: {
-          type: String,
-          required: true,
-        },
-        createdAt: {
-          type: Date,
-          default: Date.now,
-        },
-      },
-    ],
     createdAt: {
       type: Date,
       default: Date.now,

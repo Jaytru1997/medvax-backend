@@ -1,5 +1,7 @@
 const Medication = require("../models/Medication");
 const { asyncWrapper } = require("../utils/async");
+const { saveFile } = require("../utils/file");
+const fs = require("fs");
 
 // Get all medications (with optional filters)
 exports.getMedications = asyncWrapper(async (req, res) => {
@@ -38,15 +40,16 @@ exports.addMedication = asyncWrapper(async (req, res) => {
       return res.status(403).json({ message: "Access denied" });
     }
 
-    const { name, category, price, description, stock } = req.body;
-
+    const { name, category, price, description } = req.body;
+    const file = req.files.image;
+    const imagePath = await saveFile(file, "medications");
     const medication = new Medication({
       name,
       category,
       price,
       description,
-      stock,
       createdBy: req.user.id,
+      image: imagePath,
     });
 
     await medication.save();
@@ -69,6 +72,16 @@ exports.updateMedication = asyncWrapper(async (req, res) => {
     if (!medication)
       return res.status(404).json({ message: "Medication not found" });
 
+    if (req.files.image) {
+      // delete old image if it exists
+      if (medication.image) {
+        fs.unlinkSync(medication.image);
+      }
+      const file = req.files.image;
+      const imagePath = await saveFile(file, "medications");
+      medication.image = imagePath;
+    }
+
     Object.assign(medication, req.body);
     await medication.save();
 
@@ -88,6 +101,11 @@ exports.deleteMedication = asyncWrapper(async (req, res) => {
     const medication = await Medication.findByIdAndDelete(req.params.id);
     if (!medication)
       return res.status(404).json({ message: "Medication not found" });
+
+    // delete image if it exists
+    if (medication.image) {
+      fs.unlinkSync(medication.image);
+    }
 
     res.json({ message: "Medication deleted successfully" });
   } catch (error) {
