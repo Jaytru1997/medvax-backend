@@ -32,13 +32,17 @@ const router = express.Router();
  *                 type: number
  *               email:
  *                 type: string
+ *               phone_number:
+ *                 type: string
+ *               description:
+ *                 type: string
  *     responses:
  *       201:
  *         description: Payment link created successfully
  *       500:
  *         description: Server error
  */
-router.post("/create-link", authMiddleware, createPaymentLink);
+router.post("/create-link", createPaymentLink);
 
 /**
  * @swagger

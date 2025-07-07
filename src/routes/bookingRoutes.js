@@ -32,7 +32,7 @@ const router = express.Router();
  *       500:
  *         description: Server error
  */
-router.get("/slots", authMiddleware, checkRole(access.all), getAvailableSlots);
+router.get("/slots", getAvailableSlots);
 
 /**
  * @swagger
@@ -58,12 +58,7 @@ router.get("/slots", authMiddleware, checkRole(access.all), getAvailableSlots);
  *       500:
  *         description: Server error
  */
-router.post(
-  "/book",
-  authMiddleware,
-  checkRole(access.patient),
-  bookAppointment
-);
+router.post("/book", bookAppointment);
 
 /**
  * @swagger
