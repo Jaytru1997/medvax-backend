@@ -13,8 +13,10 @@ const crmRoutes = require("./src/routes/crmRoutes");
 const chatbotRoutes = require("./src/routes/chatbotRoutes");
 const adminRoutes = require("./src/routes/adminRoutes");
 const blogRoutes = require("./src/routes/blogRoutes");
+const teamMemberRoutes = require("./src/routes/teamMemberRoutes");
 
 const logger = require("./src/services/logger");
+const startupService = require("./src/services/startupService");
 const { swaggerSpec, swaggerUi } = require("./src/config/swagger");
 
 // Load environment variables
@@ -40,7 +42,14 @@ app.use(express.json());
 app.use(cors());
 app.use(helmet());
 app.use(morgan("dev"));
-app.use(fileUpload());
+app.use(
+  fileUpload({
+    limits: { fileSize: 5 * 1024 * 1024 }, // 5MB limit
+    abortOnLimit: true,
+    responseOnLimit: "File size limit has been reached",
+  })
+);
+
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/medications", medicationRoutes);
@@ -50,10 +59,41 @@ app.use("/api/crm", crmRoutes);
 app.use("/api/chatbot", chatbotRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api/blog", blogRoutes);
+app.use("/api/team-members", teamMemberRoutes);
 
 // Swagger Docs
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
+// Initialize production services
+const initializeServices = async () => {
+  try {
+    await startupService.initialize();
+    logger.info("Production services initialized successfully");
+  } catch (error) {
+    logger.error(`Failed to initialize production services: ${error.message}`);
+  }
+};
+
 // Start server
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+const server = app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+  initializeServices();
+});
+
+// Graceful shutdown
+process.on("SIGTERM", async () => {
+  console.log("SIGTERM received. Shutting down gracefully...");
+  await startupService.shutdown();
+  server.close(() => {
+    console.log("Process terminated");
+  });
+});
+
+process.on("SIGINT", async () => {
+  console.log("SIGINT received. Shutting down gracefully...");
+  await startupService.shutdown();
+  server.close(() => {
+    console.log("Process terminated");
+  });
+});
