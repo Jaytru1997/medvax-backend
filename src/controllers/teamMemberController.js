@@ -80,7 +80,7 @@ exports.getTeamMemberById = asyncWrapper(async (req, res) => {
  */
 exports.createTeamMember = asyncWrapper(async (req, res) => {
   try {
-    const { name, title, department, bio, email, linkedin, twitter, order } =
+    const { name, position, department, bio, email, linkedin, twitter, order } =
       req.body;
 
     // Handle file upload
@@ -140,7 +140,7 @@ exports.createTeamMember = asyncWrapper(async (req, res) => {
 
     const teamMember = new TeamMember({
       name,
-      title,
+      position,
       image: imageUrl,
       department,
       bio,

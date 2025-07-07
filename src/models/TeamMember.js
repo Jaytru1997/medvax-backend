@@ -8,7 +8,7 @@ const TeamMemberSchema = new mongoose.Schema(
       trim: true,
       maxlength: [100, "Name cannot exceed 100 characters"],
     },
-    title: {
+    position: {
       type: String,
       required: [true, "Title is required"],
       trim: true,

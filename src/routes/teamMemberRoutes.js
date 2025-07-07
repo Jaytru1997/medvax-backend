@@ -8,8 +8,9 @@ const {
   getTeamMembersByDepartment,
   toggleTeamMemberStatus,
 } = require("../controllers/teamMemberController");
-const { authMiddleware } = require("../middleware/authMiddleware");
-const { rbacMiddleware } = require("../middleware/rbacMiddleware");
+const authMiddleware = require("../middleware/authMiddleware");
+const { checkRole } = require("../middleware/rbacMiddleware");
+const { access } = require("../config/access");
 
 const router = express.Router();
 
@@ -151,12 +152,7 @@ router.get("/department/:department", getTeamMembersByDepartment);
  *       401:
  *         description: Unauthorized
  */
-router.post(
-  "/",
-  authMiddleware,
-  rbacMiddleware(["admin", "manager"]),
-  createTeamMember
-);
+router.post("/", authMiddleware, checkRole(access.manager), createTeamMember);
 
 /**
  * @swagger
@@ -207,12 +203,7 @@ router.post(
  *       401:
  *         description: Unauthorized
  */
-router.put(
-  "/:id",
-  authMiddleware,
-  rbacMiddleware(["admin", "manager"]),
-  updateTeamMember
-);
+router.put("/:id", authMiddleware, checkRole(access.manager), updateTeamMember);
 
 /**
  * @swagger
@@ -239,7 +230,7 @@ router.put(
 router.delete(
   "/:id",
   authMiddleware,
-  rbacMiddleware(["admin"]),
+  checkRole(access.admin),
   deleteTeamMember
 );
 
@@ -268,7 +259,7 @@ router.delete(
 router.patch(
   "/:id/toggle-status",
   authMiddleware,
-  rbacMiddleware(["admin", "manager"]),
+  checkRole(access.manager),
   toggleTeamMemberStatus
 );
 

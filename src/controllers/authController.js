@@ -108,7 +108,7 @@ exports.login = asyncWrapper(async (req, res, next) => {
   if (!user || !(await user.comparePassword(password))) {
     return next(new AppError("Invalid email or password!", 401));
   }
-  if (user.isActive === true) {
+  if (user) {
     const token = signToken(user._id, user.role);
 
     res.status(200).json({
@@ -119,7 +119,7 @@ exports.login = asyncWrapper(async (req, res, next) => {
   } else {
     res.status(400).json({
       status: "failed",
-      message: "USer account deactivated",
+      message: "USer account not found",
     });
   }
 });
