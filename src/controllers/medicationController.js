@@ -36,13 +36,14 @@ exports.getMedicationById = asyncWrapper(async (req, res) => {
 // Add new medication (Admin only)
 exports.addMedication = asyncWrapper(async (req, res) => {
   try {
-    if (req.user.role !== "admin") {
-      return res.status(403).json({ message: "Access denied" });
+    const { name, category, price, description } = req.body;
+    let imagePath = null;
+
+    if (req.files && req.files.image) {
+      const file = req.files.image;
+      imagePath = await saveFile(file, "medications");
     }
 
-    const { name, category, price, description } = req.body;
-    const file = req.files.image;
-    const imagePath = await saveFile(file, "medications");
     const medication = new Medication({
       name,
       category,
