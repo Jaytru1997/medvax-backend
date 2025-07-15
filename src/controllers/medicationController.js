@@ -52,7 +52,7 @@ exports.addMedication = asyncWrapper(async (req, res) => {
       image: imagePath,
     });
 
-    await medication.save();
+    await medication.save({ validateBeforeSave: false });
     res
       .status(201)
       .json({ message: "Medication added successfully", medication });
@@ -74,16 +74,16 @@ exports.updateMedication = asyncWrapper(async (req, res) => {
 
     if (req.files.image) {
       // delete old image if it exists
+      const file = req.files.image;
+      const imagePath = await saveFile(file, "medications");
       if (medication.image) {
         fs.unlinkSync(medication.image);
       }
-      const file = req.files.image;
-      const imagePath = await saveFile(file, "medications");
       medication.image = imagePath;
     }
 
     Object.assign(medication, req.body);
-    await medication.save();
+    await medication.save({ validateBeforeSave: false });
 
     res.json({ message: "Medication updated", medication });
   } catch (error) {

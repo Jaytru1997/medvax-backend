@@ -3,6 +3,7 @@ const { asyncWrapper } = require("../utils/async");
 const logger = require("../services/logger");
 const path = require("path");
 const fs = require("fs");
+require("dotenv").config();
 
 /**
  * Get all team members
@@ -128,7 +129,7 @@ exports.createTeamMember = asyncWrapper(async (req, res) => {
 
       // Move file to uploads directory
       await file.mv(uploadPath);
-      imageUrl = `/uploads/team-members/${fileName}`;
+      imageUrl = `https://${process.env.URL}/uploads/team-members/${fileName}`;
 
       logger.info(`Image uploaded for team member: ${fileName}`);
     } else {
@@ -243,7 +244,7 @@ exports.updateTeamMember = asyncWrapper(async (req, res) => {
 
       // Move file to uploads directory
       await file.mv(uploadPath);
-      updateData.image = `/uploads/team-members/${fileName}`;
+      updateData.image = `https://${process.env.URL}/uploads/team-members/${fileName}`;
 
       logger.info(`Image updated for team member: ${fileName}`);
     }

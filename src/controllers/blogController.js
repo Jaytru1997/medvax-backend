@@ -6,23 +6,26 @@ const fs = require("fs");
 exports.createPost = async (req, res) => {
   try {
     const { title, content, category, language, excerpt } = req.body;
-    const file = req.files.banner;
-    //save file to public folder then return string
-    const banner = await saveFile(file, "blog-banners");
-    console.log(banner);
+    let banner = null;
+    if (req.files && req.files.banner) {
+      const file = req.files.banner;
+      //save file to public folder then return string
+      banner = await saveFile(file, "blog-banners");
+    }
 
     const author = req.user.id;
     const newPost = new Blog({
       title,
       content,
       author,
-      category: category.toLowerCase() || "other",
+      category: category ? category.toLowerCase() : "other",
       excerpt,
       banner,
-      language: language.toLowerCase() || "en",
+      language: language ? language.toLowerCase() : "en",
     });
+    // console.log(newPost);
 
-    await newPost.save();
+    await newPost.save({ validateBeforeSave: false });
     res.status(201).json({ message: "Blog post created", post: newPost });
   } catch (error) {
     res.status(500).json({ message: "Server error", error });
@@ -60,14 +63,22 @@ exports.updatePost = async (req, res) => {
     const file = req.files.banner;
     // delete old banner if it exists
     const oldPost = await Blog.findById(req.params.id);
-    if (oldPost.banner) {
-      fs.unlinkSync(oldPost.banner);
-    }
-    const banner = await saveFile(file, "blog-banners");
+    const banner = (await saveFile(file, "blog-banners")) || oldPost.banner;
+    // if (oldPost.banner) {
+    //   fs.unlinkSync(oldPost.banner);
+    // }
 
     const updatedPost = await Blog.findByIdAndUpdate(
       req.params.id,
-      { title, content, category, language, excerpt, updatedAt: Date.now() },
+      {
+        title,
+        content,
+        banner,
+        category,
+        language,
+        excerpt,
+        updatedAt: Date.now(),
+      },
       { new: true }
     );
 

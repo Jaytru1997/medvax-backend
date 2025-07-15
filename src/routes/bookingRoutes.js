@@ -24,6 +24,12 @@ const router = express.Router();
  *     summary: Get available slots
  *     tags: [Booking]
  *     description: Allows a user to get available slots.
+ *     parameters:
+ *       - in: path
+ *         event_type: event type slug e.g 1v1-session
+ *         required: true
+ *         schema:
+ *           type: string
  *     requestBody:
  *       required: true
  *     responses:
@@ -32,7 +38,7 @@ const router = express.Router();
  *       500:
  *         description: Server error
  */
-router.get("/slots", getAvailableSlots);
+router.get("/slots/:event_type", getAvailableSlots);
 
 /**
  * @swagger

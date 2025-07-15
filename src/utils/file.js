@@ -2,13 +2,21 @@
 // if folder does not exist, create it
 const fs = require("fs");
 const path = require("path");
-exports.saveFile = async (file, folder) => {
-  //make sure that public is in root of the project
-  const filePath = path.join(__dirname, "../../public", folder, file.name);
-  //   console.log(filePath);
-  if (!fs.existsSync(filePath)) {
-    fs.mkdirSync(filePath, { recursive: true });
+const dotenv = require("dotenv");
+dotenv.config();
+
+const saveFile = async (file, folder) => {
+  const publicFolder = path.join(__dirname, "../../public", folder);
+  if (!fs.existsSync(publicFolder)) {
+    fs.mkdirSync(publicFolder, { recursive: true });
   }
+  const filePath = path.join(publicFolder, file.name);
   await file.mv(filePath);
-  return filePath;
+
+  // Get the relative path from the public folder
+  const relativePath = `/${folder}/${file.name}`;
+  const fileUrl = `${process.env.BACKEND_URL}${relativePath}`;
+  return fileUrl;
 };
+
+module.exports = { saveFile };

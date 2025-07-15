@@ -308,3 +308,4 @@
 {"level":"info","message":"Cleanup service stopped","timestamp":"2025-07-07T22:37:28.502Z"}
 {"level":"info","message":"Cleanup service stopped","timestamp":"2025-07-07T22:37:28.502Z"}
 {"level":"info","message":"All production services shut down successfully","timestamp":"2025-07-07T22:37:28.502Z"}
+{"level":"info","message":"Shutting down production services...","timestamp":"2025-07-07T22:41:05.589Z"}
