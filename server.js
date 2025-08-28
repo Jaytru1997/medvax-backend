@@ -14,6 +14,7 @@ const chatbotRoutes = require("./src/routes/chatbotRoutes");
 const adminRoutes = require("./src/routes/adminRoutes");
 const blogRoutes = require("./src/routes/blogRoutes");
 const teamMemberRoutes = require("./src/routes/teamMemberRoutes");
+const screeningRoutes = require("./src/routes/screeningRoutes");
 
 const logger = require("./src/services/logger");
 const startupService = require("./src/services/startupService");
@@ -60,6 +61,7 @@ app.use("/api/chatbot", chatbotRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api/blog", blogRoutes);
 app.use("/api/team-members", teamMemberRoutes);
+app.use("/api/screening", screeningRoutes);
 
 // Swagger Docs
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));

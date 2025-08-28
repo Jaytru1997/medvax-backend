@@ -1,0 +1,48 @@
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-16T12:43:39.244Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-16T12:43:39.246Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-16T12:43:39.253Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-16T12:43:39.257Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-16T12:43:39.262Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-16T12:43:39.263Z"}
+{"level":"error","message":"Error in cleanupExpiredSessions: Operation `chatsessions.updateMany()` buffering timed out after 10000ms","timestamp":"2025-08-16T12:43:49.275Z"}
+{"level":"error","message":"Error during cleanup: Operation `chatsessions.updateMany()` buffering timed out after 10000ms","timestamp":"2025-08-16T12:43:49.275Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-16T12:45:30.764Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-16T12:45:30.766Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-16T12:45:30.770Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-16T12:45:30.772Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-16T12:45:30.775Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-16T12:45:30.776Z"}
+{"level":"info","message":"Cleaned up 0 expired sessions","timestamp":"2025-08-16T12:45:37.879Z"}
+{"level":"info","message":"Cleanup completed: 0 sessions cleaned, 0 active sessions remaining","timestamp":"2025-08-16T12:45:40.122Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-16T12:45:45.163Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-16T12:45:45.165Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-16T12:45:45.168Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-16T12:45:45.170Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-16T12:45:45.176Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-16T12:45:45.176Z"}
+{"level":"info","message":"Cleaned up 0 expired sessions","timestamp":"2025-08-16T12:45:47.096Z"}
+{"level":"info","message":"Cleanup completed: 0 sessions cleaned, 0 active sessions remaining","timestamp":"2025-08-16T12:45:48.422Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-16T12:49:28.183Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-16T12:49:28.185Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-16T12:49:28.189Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-16T12:49:28.190Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-16T12:49:28.195Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-16T12:49:28.196Z"}
+{"level":"info","message":"Cleaned up 0 expired sessions","timestamp":"2025-08-16T12:49:33.302Z"}
+{"level":"info","message":"Cleanup completed: 0 sessions cleaned, 0 active sessions remaining","timestamp":"2025-08-16T12:49:35.524Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-16T12:50:00.515Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-16T12:50:00.515Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-16T12:50:00.517Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-16T12:50:00.518Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-16T12:50:00.523Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-16T12:50:00.523Z"}
+{"level":"info","message":"Cleaned up 0 expired sessions","timestamp":"2025-08-16T12:50:02.367Z"}
+{"level":"info","message":"Cleanup completed: 0 sessions cleaned, 0 active sessions remaining","timestamp":"2025-08-16T12:50:03.815Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-16T13:03:39.926Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-16T13:03:39.926Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-16T13:03:39.930Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-16T13:03:39.931Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-16T13:03:39.935Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-16T13:03:39.935Z"}
+{"level":"info","message":"Cleaned up 0 expired sessions","timestamp":"2025-08-16T13:03:44.877Z"}
+{"level":"info","message":"Cleanup completed: 0 sessions cleaned, 0 active sessions remaining","timestamp":"2025-08-16T13:03:47.120Z"}

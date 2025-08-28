@@ -1,0 +1,493 @@
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T12:56:43.882Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T12:56:43.883Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T12:56:43.886Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T12:56:43.887Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T12:56:43.892Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T12:56:43.892Z"}
+{"level":"error","message":"Error in cleanupExpiredSessions: Operation `chatsessions.updateMany()` buffering timed out after 10000ms","timestamp":"2025-08-28T12:56:53.907Z"}
+{"level":"error","message":"Error during cleanup: Operation `chatsessions.updateMany()` buffering timed out after 10000ms","timestamp":"2025-08-28T12:56:53.908Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T12:58:32.027Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T12:58:32.027Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T12:58:32.029Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T12:58:32.030Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T12:58:32.034Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T12:58:32.034Z"}
+{"level":"info","message":"Cleaned up 0 expired sessions","timestamp":"2025-08-28T12:58:39.575Z"}
+{"level":"info","message":"Cleanup completed: 0 sessions cleaned, 0 active sessions remaining","timestamp":"2025-08-28T12:58:42.998Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T13:04:43.038Z"}
+{"level":"info","message":"POST /api/screening","timestamp":"2025-08-28T13:04:43.057Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T13:08:33.965Z"}
+{"level":"info","message":"POST /api/screening","timestamp":"2025-08-28T13:08:33.971Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T13:16:13.755Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T13:16:13.756Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T13:16:13.761Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T13:16:13.762Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T13:16:13.772Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T13:16:13.774Z"}
+{"level":"info","message":"Cleaned up 0 expired sessions","timestamp":"2025-08-28T13:16:16.736Z"}
+{"level":"info","message":"Cleanup completed: 0 sessions cleaned, 0 active sessions remaining","timestamp":"2025-08-28T13:16:20.406Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T13:31:39.107Z"}
+{"level":"info","message":"POST /api/screening","timestamp":"2025-08-28T13:31:39.123Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T13:32:39.678Z"}
+{"level":"info","message":"POST /api/screening","timestamp":"2025-08-28T13:32:39.688Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T13:33:46.792Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T13:33:46.793Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T13:33:46.795Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T13:33:46.796Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T13:33:46.801Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T13:33:46.802Z"}
+{"level":"info","message":"Cleaned up 0 expired sessions","timestamp":"2025-08-28T13:33:50.503Z"}
+{"level":"info","message":"Cleanup completed: 0 sessions cleaned, 0 active sessions remaining","timestamp":"2025-08-28T13:33:53.549Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T13:34:01.343Z"}
+{"level":"info","message":"POST /api/screening","timestamp":"2025-08-28T13:34:01.350Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T13:35:29.166Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T13:35:29.167Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T13:35:29.169Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T13:35:29.170Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T13:35:29.173Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T13:35:29.173Z"}
+{"level":"info","message":"Cleaned up 0 expired sessions","timestamp":"2025-08-28T13:35:32.405Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T13:35:38.098Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T13:35:38.099Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T13:35:38.102Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T13:35:38.103Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T13:35:38.107Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T13:35:38.107Z"}
+{"level":"info","message":"Cleaned up 0 expired sessions","timestamp":"2025-08-28T13:35:40.581Z"}
+{"level":"info","message":"Cleanup completed: 0 sessions cleaned, 0 active sessions remaining","timestamp":"2025-08-28T13:35:43.368Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T13:38:54.332Z"}
+{"level":"info","message":"POST /api/screening","timestamp":"2025-08-28T13:38:54.341Z"}
+{"level":"info","message":"OPTIONS /api/auth/login","timestamp":"2025-08-28T13:58:20.125Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-08-28T13:58:20.137Z"}
+{"level":"info","message":"OPTIONS /api/team-members","timestamp":"2025-08-28T13:58:20.775Z"}
+{"level":"info","message":"GET /api/team-members","timestamp":"2025-08-28T13:58:20.782Z"}
+{"level":"info","message":"OPTIONS /api/medications","timestamp":"2025-08-28T13:58:20.810Z"}
+{"level":"info","message":"OPTIONS /api/blog","timestamp":"2025-08-28T13:58:20.814Z"}
+{"level":"info","message":"OPTIONS /api/bookings","timestamp":"2025-08-28T13:58:20.833Z"}
+{"level":"info","message":"GET /api/blog","timestamp":"2025-08-28T13:58:20.859Z"}
+{"level":"info","message":"GET /api/medications","timestamp":"2025-08-28T13:58:20.874Z"}
+{"level":"info","message":"GET /api/bookings","timestamp":"2025-08-28T13:58:20.880Z"}
+{"level":"info","message":"Retrieved 2 team members","timestamp":"2025-08-28T13:58:21.585Z"}
+{"level":"info","message":"OPTIONS /api/team-members","timestamp":"2025-08-28T14:19:22.950Z"}
+{"level":"info","message":"OPTIONS /api/medications","timestamp":"2025-08-28T14:19:22.967Z"}
+{"level":"info","message":"OPTIONS /api/blog","timestamp":"2025-08-28T14:19:22.994Z"}
+{"level":"info","message":"GET /api/medications","timestamp":"2025-08-28T14:19:23.003Z"}
+{"level":"info","message":"GET /api/team-members","timestamp":"2025-08-28T14:19:23.014Z"}
+{"level":"info","message":"OPTIONS /api/bookings","timestamp":"2025-08-28T14:19:23.027Z"}
+{"level":"info","message":"GET /api/bookings","timestamp":"2025-08-28T14:19:23.044Z"}
+{"level":"info","message":"GET /api/blog","timestamp":"2025-08-28T14:19:23.057Z"}
+{"level":"info","message":"Retrieved 2 team members","timestamp":"2025-08-28T14:19:23.372Z"}
+{"level":"info","message":"OPTIONS /api/auth/logout","timestamp":"2025-08-28T14:29:29.217Z"}
+{"level":"info","message":"GET /api/auth/logout","timestamp":"2025-08-28T14:29:29.317Z"}
+{"level":"info","message":"OPTIONS /api/auth/login","timestamp":"2025-08-28T14:33:49.222Z"}
+{"level":"info","message":"POST /api/auth/login","timestamp":"2025-08-28T14:33:49.226Z"}
+{"level":"info","message":"OPTIONS /api/team-members","timestamp":"2025-08-28T14:33:49.761Z"}
+{"level":"info","message":"GET /api/team-members","timestamp":"2025-08-28T14:33:49.768Z"}
+{"level":"info","message":"OPTIONS /api/medications","timestamp":"2025-08-28T14:33:49.801Z"}
+{"level":"info","message":"GET /api/medications","timestamp":"2025-08-28T14:33:49.816Z"}
+{"level":"info","message":"OPTIONS /api/blog","timestamp":"2025-08-28T14:33:49.837Z"}
+{"level":"info","message":"OPTIONS /api/bookings","timestamp":"2025-08-28T14:33:49.855Z"}
+{"level":"info","message":"GET /api/bookings","timestamp":"2025-08-28T14:33:49.883Z"}
+{"level":"info","message":"GET /api/blog","timestamp":"2025-08-28T14:33:49.891Z"}
+{"level":"info","message":"Retrieved 2 team members","timestamp":"2025-08-28T14:33:49.940Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T14:35:38.102Z"}
+{"level":"info","message":"Cleaned up 0 expired sessions","timestamp":"2025-08-28T14:35:38.281Z"}
+{"level":"info","message":"Cleanup completed: 0 sessions cleaned, 0 active sessions remaining","timestamp":"2025-08-28T14:35:39.079Z"}
+{"level":"info","message":"OPTIONS /api/team-members","timestamp":"2025-08-28T14:37:28.307Z"}
+{"level":"info","message":"OPTIONS /api/medications","timestamp":"2025-08-28T14:37:28.328Z"}
+{"level":"info","message":"OPTIONS /api/blog","timestamp":"2025-08-28T14:37:28.336Z"}
+{"level":"info","message":"GET /api/team-members","timestamp":"2025-08-28T14:37:28.337Z"}
+{"level":"info","message":"OPTIONS /api/bookings","timestamp":"2025-08-28T14:37:28.344Z"}
+{"level":"info","message":"GET /api/medications","timestamp":"2025-08-28T14:37:28.346Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T14:37:28.353Z"}
+{"level":"info","message":"GET /api/blog","timestamp":"2025-08-28T14:37:28.358Z"}
+{"level":"info","message":"GET /api/bookings","timestamp":"2025-08-28T14:37:28.367Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T14:37:28.370Z"}
+{"level":"info","message":"Retrieved 2 team members","timestamp":"2025-08-28T14:37:28.509Z"}
+{"level":"info","message":"OPTIONS /api/team-members","timestamp":"2025-08-28T14:38:03.614Z"}
+{"level":"info","message":"OPTIONS /api/medications","timestamp":"2025-08-28T14:38:03.636Z"}
+{"level":"info","message":"GET /api/team-members","timestamp":"2025-08-28T14:38:03.641Z"}
+{"level":"info","message":"OPTIONS /api/blog","timestamp":"2025-08-28T14:38:03.648Z"}
+{"level":"info","message":"OPTIONS /api/bookings","timestamp":"2025-08-28T14:38:03.651Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T14:38:03.656Z"}
+{"level":"info","message":"GET /api/medications","timestamp":"2025-08-28T14:38:03.665Z"}
+{"level":"info","message":"GET /api/bookings","timestamp":"2025-08-28T14:38:03.673Z"}
+{"level":"info","message":"GET /api/blog","timestamp":"2025-08-28T14:38:03.675Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T14:38:03.677Z"}
+{"level":"info","message":"Retrieved 2 team members","timestamp":"2025-08-28T14:38:03.802Z"}
+{"level":"info","message":"OPTIONS /api/team-members","timestamp":"2025-08-28T14:38:19.617Z"}
+{"level":"info","message":"OPTIONS /api/medications","timestamp":"2025-08-28T14:38:19.630Z"}
+{"level":"info","message":"OPTIONS /api/blog","timestamp":"2025-08-28T14:38:19.647Z"}
+{"level":"info","message":"OPTIONS /api/bookings","timestamp":"2025-08-28T14:38:19.659Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T14:38:19.666Z"}
+{"level":"info","message":"GET /api/team-members","timestamp":"2025-08-28T14:38:19.684Z"}
+{"level":"info","message":"GET /api/bookings","timestamp":"2025-08-28T14:38:19.704Z"}
+{"level":"info","message":"GET /api/medications","timestamp":"2025-08-28T14:38:19.741Z"}
+{"level":"info","message":"GET /api/blog","timestamp":"2025-08-28T14:38:19.756Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T14:38:19.772Z"}
+{"level":"info","message":"Retrieved 2 team members","timestamp":"2025-08-28T14:38:19.873Z"}
+{"level":"info","message":"OPTIONS /api/team-members","timestamp":"2025-08-28T14:38:32.346Z"}
+{"level":"info","message":"OPTIONS /api/medications","timestamp":"2025-08-28T14:38:32.371Z"}
+{"level":"info","message":"OPTIONS /api/blog","timestamp":"2025-08-28T14:38:32.384Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T14:38:32.390Z"}
+{"level":"info","message":"GET /api/team-members","timestamp":"2025-08-28T14:38:32.408Z"}
+{"level":"info","message":"OPTIONS /api/bookings","timestamp":"2025-08-28T14:38:32.426Z"}
+{"level":"info","message":"GET /api/blog","timestamp":"2025-08-28T14:38:32.433Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T14:38:32.457Z"}
+{"level":"info","message":"GET /api/medications","timestamp":"2025-08-28T14:38:32.464Z"}
+{"level":"info","message":"GET /api/bookings","timestamp":"2025-08-28T14:38:32.474Z"}
+{"level":"info","message":"Retrieved 2 team members","timestamp":"2025-08-28T14:38:32.595Z"}
+{"level":"info","message":"OPTIONS /api/team-members","timestamp":"2025-08-28T14:38:41.952Z"}
+{"level":"info","message":"GET /api/team-members","timestamp":"2025-08-28T14:38:41.969Z"}
+{"level":"info","message":"OPTIONS /api/medications","timestamp":"2025-08-28T14:38:42.004Z"}
+{"level":"info","message":"OPTIONS /api/blog","timestamp":"2025-08-28T14:38:42.016Z"}
+{"level":"info","message":"OPTIONS /api/bookings","timestamp":"2025-08-28T14:38:42.038Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T14:38:42.048Z"}
+{"level":"info","message":"GET /api/medications","timestamp":"2025-08-28T14:38:42.056Z"}
+{"level":"info","message":"GET /api/blog","timestamp":"2025-08-28T14:38:42.066Z"}
+{"level":"info","message":"GET /api/bookings","timestamp":"2025-08-28T14:38:42.070Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T14:38:42.089Z"}
+{"level":"info","message":"Retrieved 2 team members","timestamp":"2025-08-28T14:38:42.172Z"}
+{"level":"info","message":"OPTIONS /api/team-members","timestamp":"2025-08-28T14:39:18.504Z"}
+{"level":"info","message":"OPTIONS /api/medications","timestamp":"2025-08-28T14:39:18.517Z"}
+{"level":"info","message":"GET /api/team-members","timestamp":"2025-08-28T14:39:18.537Z"}
+{"level":"info","message":"OPTIONS /api/blog","timestamp":"2025-08-28T14:39:18.560Z"}
+{"level":"info","message":"OPTIONS /api/bookings","timestamp":"2025-08-28T14:39:18.565Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T14:39:18.567Z"}
+{"level":"info","message":"GET /api/medications","timestamp":"2025-08-28T14:39:18.571Z"}
+{"level":"info","message":"GET /api/bookings","timestamp":"2025-08-28T14:39:18.579Z"}
+{"level":"info","message":"GET /api/blog","timestamp":"2025-08-28T14:39:18.581Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T14:39:18.589Z"}
+{"level":"info","message":"Retrieved 2 team members","timestamp":"2025-08-28T14:39:18.722Z"}
+{"level":"info","message":"OPTIONS /api/team-members","timestamp":"2025-08-28T14:39:26.241Z"}
+{"level":"info","message":"OPTIONS /api/medications","timestamp":"2025-08-28T14:39:26.252Z"}
+{"level":"info","message":"GET /api/team-members","timestamp":"2025-08-28T14:39:26.260Z"}
+{"level":"info","message":"OPTIONS /api/blog","timestamp":"2025-08-28T14:39:26.263Z"}
+{"level":"info","message":"OPTIONS /api/bookings","timestamp":"2025-08-28T14:39:26.267Z"}
+{"level":"info","message":"GET /api/medications","timestamp":"2025-08-28T14:39:26.269Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T14:39:26.272Z"}
+{"level":"info","message":"GET /api/bookings","timestamp":"2025-08-28T14:39:26.277Z"}
+{"level":"info","message":"GET /api/blog","timestamp":"2025-08-28T14:39:26.278Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T14:39:26.282Z"}
+{"level":"info","message":"Retrieved 2 team members","timestamp":"2025-08-28T14:39:26.460Z"}
+{"level":"info","message":"OPTIONS /api/team-members","timestamp":"2025-08-28T14:42:41.318Z"}
+{"level":"info","message":"OPTIONS /api/medications","timestamp":"2025-08-28T14:42:41.334Z"}
+{"level":"info","message":"OPTIONS /api/bookings","timestamp":"2025-08-28T14:42:41.378Z"}
+{"level":"info","message":"OPTIONS /api/blog","timestamp":"2025-08-28T14:42:41.387Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T14:42:41.395Z"}
+{"level":"info","message":"GET /api/team-members","timestamp":"2025-08-28T14:42:41.406Z"}
+{"level":"info","message":"GET /api/bookings","timestamp":"2025-08-28T14:42:41.417Z"}
+{"level":"info","message":"GET /api/medications","timestamp":"2025-08-28T14:42:41.433Z"}
+{"level":"info","message":"GET /api/blog","timestamp":"2025-08-28T14:42:41.446Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T14:42:41.451Z"}
+{"level":"info","message":"Retrieved 2 team members","timestamp":"2025-08-28T14:42:41.578Z"}
+{"level":"info","message":"OPTIONS /api/team-members","timestamp":"2025-08-28T14:42:50.343Z"}
+{"level":"info","message":"OPTIONS /api/medications","timestamp":"2025-08-28T14:42:50.353Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T14:42:50.356Z"}
+{"level":"info","message":"OPTIONS /api/blog","timestamp":"2025-08-28T14:42:50.359Z"}
+{"level":"info","message":"OPTIONS /api/bookings","timestamp":"2025-08-28T14:42:50.363Z"}
+{"level":"info","message":"GET /api/team-members","timestamp":"2025-08-28T14:42:50.369Z"}
+{"level":"info","message":"GET /api/bookings","timestamp":"2025-08-28T14:42:50.377Z"}
+{"level":"info","message":"GET /api/medications","timestamp":"2025-08-28T14:42:50.383Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T14:42:50.386Z"}
+{"level":"info","message":"GET /api/blog","timestamp":"2025-08-28T14:42:50.417Z"}
+{"level":"info","message":"Retrieved 2 team members","timestamp":"2025-08-28T14:42:50.534Z"}
+{"level":"info","message":"OPTIONS /api/team-members","timestamp":"2025-08-28T14:42:59.718Z"}
+{"level":"info","message":"OPTIONS /api/medications","timestamp":"2025-08-28T14:42:59.725Z"}
+{"level":"info","message":"OPTIONS /api/blog","timestamp":"2025-08-28T14:42:59.726Z"}
+{"level":"info","message":"OPTIONS /api/bookings","timestamp":"2025-08-28T14:42:59.731Z"}
+{"level":"info","message":"GET /api/team-members","timestamp":"2025-08-28T14:42:59.736Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T14:42:59.744Z"}
+{"level":"info","message":"GET /api/bookings","timestamp":"2025-08-28T14:42:59.750Z"}
+{"level":"info","message":"GET /api/medications","timestamp":"2025-08-28T14:42:59.752Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T14:42:59.759Z"}
+{"level":"info","message":"GET /api/blog","timestamp":"2025-08-28T14:42:59.761Z"}
+{"level":"info","message":"Retrieved 2 team members","timestamp":"2025-08-28T14:42:59.905Z"}
+{"level":"info","message":"OPTIONS /api/team-members","timestamp":"2025-08-28T14:43:05.358Z"}
+{"level":"info","message":"OPTIONS /api/medications","timestamp":"2025-08-28T14:43:05.365Z"}
+{"level":"info","message":"OPTIONS /api/blog","timestamp":"2025-08-28T14:43:05.385Z"}
+{"level":"info","message":"OPTIONS /api/bookings","timestamp":"2025-08-28T14:43:05.395Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T14:43:05.422Z"}
+{"level":"info","message":"GET /api/bookings","timestamp":"2025-08-28T14:43:05.446Z"}
+{"level":"info","message":"GET /api/team-members","timestamp":"2025-08-28T14:43:05.455Z"}
+{"level":"info","message":"GET /api/medications","timestamp":"2025-08-28T14:43:05.467Z"}
+{"level":"info","message":"GET /api/blog","timestamp":"2025-08-28T14:43:05.480Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T14:43:05.483Z"}
+{"level":"info","message":"Retrieved 2 team members","timestamp":"2025-08-28T14:43:05.626Z"}
+{"level":"info","message":"OPTIONS /api/team-members","timestamp":"2025-08-28T14:47:51.466Z"}
+{"level":"info","message":"OPTIONS /api/medications","timestamp":"2025-08-28T14:47:51.472Z"}
+{"level":"info","message":"OPTIONS /api/blog","timestamp":"2025-08-28T14:47:51.487Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T14:47:51.491Z"}
+{"level":"info","message":"GET /api/team-members","timestamp":"2025-08-28T14:47:51.500Z"}
+{"level":"info","message":"GET /api/medications","timestamp":"2025-08-28T14:47:51.509Z"}
+{"level":"info","message":"GET /api/blog","timestamp":"2025-08-28T14:47:51.520Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T14:47:51.534Z"}
+{"level":"info","message":"Retrieved 2 team members","timestamp":"2025-08-28T14:47:51.695Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T14:57:00.916Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T14:57:00.938Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T14:58:07.567Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T14:58:07.583Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T14:58:24.555Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T14:58:24.573Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T15:14:39.730Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T15:14:39.763Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T15:14:47.155Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T15:14:47.172Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T15:15:00.221Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T15:15:00.229Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T15:15:02.837Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T15:15:17.240Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T15:15:17.255Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T15:15:20.452Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T15:15:27.190Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T15:15:27.233Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T15:15:30.702Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T15:18:27.636Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T15:18:27.645Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T15:19:56.785Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T15:19:56.848Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T15:21:08.214Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T15:21:08.247Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T15:22:56.591Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T15:22:56.612Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T15:25:18.636Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T15:25:18.688Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T15:27:27.035Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T15:27:27.104Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T15:28:34.351Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T15:28:34.410Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T15:29:44.747Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T15:29:44.784Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T15:30:39.377Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T15:30:39.456Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T15:35:38.102Z"}
+{"level":"info","message":"Cleaned up 0 expired sessions","timestamp":"2025-08-28T15:35:38.279Z"}
+{"level":"info","message":"Cleanup completed: 0 sessions cleaned, 0 active sessions remaining","timestamp":"2025-08-28T15:35:39.040Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T15:48:09.466Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T15:48:09.474Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T15:48:44.131Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T15:48:44.158Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T15:54:20.318Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T15:54:20.353Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T15:54:34.629Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T15:54:34.655Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T16:01:38.152Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T16:01:38.171Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T16:02:34.811Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T16:02:34.824Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T16:05:21.683Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T16:05:21.696Z"}
+{"level":"info","message":"OPTIONS /api/screening/68b05bee32cd19d035db3b34","timestamp":"2025-08-28T16:07:41.694Z"}
+{"level":"info","message":"PUT /api/screening/68b05bee32cd19d035db3b34","timestamp":"2025-08-28T16:07:41.701Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T16:07:42.236Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T16:07:42.242Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T16:07:42.899Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T16:10:24.954Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T16:10:24.955Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T16:10:24.959Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T16:10:24.960Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T16:10:24.964Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T16:10:24.964Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T16:13:30.010Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T16:13:30.011Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T16:13:30.013Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T16:13:30.014Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T16:13:30.016Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T16:13:30.017Z"}
+{"level":"error","message":"Error in cleanupExpiredSessions: Operation `chatsessions.updateMany()` buffering timed out after 10000ms","timestamp":"2025-08-28T16:13:40.027Z"}
+{"level":"error","message":"Error during cleanup: Operation `chatsessions.updateMany()` buffering timed out after 10000ms","timestamp":"2025-08-28T16:13:40.028Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T16:16:37.712Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T16:16:37.713Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T16:16:37.715Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T16:16:37.716Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T16:16:37.718Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T16:16:37.719Z"}
+{"level":"error","message":"Error in cleanupExpiredSessions: Operation `chatsessions.updateMany()` buffering timed out after 10000ms","timestamp":"2025-08-28T16:16:47.728Z"}
+{"level":"error","message":"Error during cleanup: Operation `chatsessions.updateMany()` buffering timed out after 10000ms","timestamp":"2025-08-28T16:16:47.728Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T16:17:49.213Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T16:17:49.214Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T16:17:49.216Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T16:17:49.216Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T16:17:49.221Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T16:17:49.221Z"}
+{"level":"info","message":"Cleaned up 0 expired sessions","timestamp":"2025-08-28T16:17:57.611Z"}
+{"level":"info","message":"Cleanup completed: 0 sessions cleaned, 0 active sessions remaining","timestamp":"2025-08-28T16:18:00.118Z"}
+{"level":"info","message":"OPTIONS /api/screening/68b05bee32cd19d035db3b34","timestamp":"2025-08-28T16:18:08.751Z"}
+{"level":"info","message":"PUT /api/screening/68b05bee32cd19d035db3b34","timestamp":"2025-08-28T16:18:08.764Z"}
+{"level":"info","message":"attempting sending email to undefined","timestamp":"2025-08-28T16:18:09.316Z"}
+{"level":"error","message":"Failed to send email to undefined: No recipients defined","timestamp":"2025-08-28T16:18:33.148Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T16:18:33.181Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T16:18:33.195Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T16:18:33.850Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T16:20:09.312Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T16:20:09.313Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T16:20:09.316Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T16:20:09.317Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T16:20:09.320Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T16:20:09.320Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T16:21:00.357Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T16:21:00.358Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T16:21:00.360Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T16:21:00.360Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T16:21:00.364Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T16:21:00.364Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T16:21:06.480Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T16:21:06.481Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T16:21:06.484Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T16:21:06.484Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T16:21:06.487Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T16:21:06.487Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T16:21:12.833Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T16:21:12.833Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T16:21:12.835Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T16:21:12.836Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T16:21:12.839Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T16:21:12.839Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T16:21:24.797Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T16:21:24.798Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T16:21:24.800Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T16:21:24.800Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T16:21:24.804Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T16:21:24.804Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T16:21:31.610Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T16:21:31.611Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T16:21:31.613Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T16:21:31.613Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T16:21:31.617Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T16:21:31.617Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T16:21:36.191Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T16:21:36.191Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T16:21:36.193Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T16:21:36.194Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T16:21:36.197Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T16:21:36.197Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T16:22:17.427Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T16:22:17.428Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T16:22:17.430Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T16:22:17.431Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T16:22:17.435Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T16:22:17.435Z"}
+{"level":"error","message":"Error in cleanupExpiredSessions: Operation `chatsessions.updateMany()` buffering timed out after 10000ms","timestamp":"2025-08-28T16:22:27.447Z"}
+{"level":"error","message":"Error during cleanup: Operation `chatsessions.updateMany()` buffering timed out after 10000ms","timestamp":"2025-08-28T16:22:27.448Z"}
+{"level":"info","message":"OPTIONS /api/screening/68b05bee32cd19d035db3b34","timestamp":"2025-08-28T16:22:32.890Z"}
+{"level":"info","message":"PUT /api/screening/68b05bee32cd19d035db3b34","timestamp":"2025-08-28T16:22:32.905Z"}
+{"level":"info","message":"attempting sending email to undefined","timestamp":"2025-08-28T16:22:33.458Z"}
+{"level":"error","message":"Failed to send email to undefined: No recipients defined","timestamp":"2025-08-28T16:22:36.867Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T16:22:36.911Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T16:22:36.921Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T16:22:37.630Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T16:23:20.116Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T16:23:20.117Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T16:23:20.120Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T16:23:20.122Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T16:23:20.127Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T16:23:20.128Z"}
+{"level":"info","message":"Cleaned up 0 expired sessions","timestamp":"2025-08-28T16:23:22.017Z"}
+{"level":"info","message":"Cleanup completed: 0 sessions cleaned, 0 active sessions remaining","timestamp":"2025-08-28T16:23:24.348Z"}
+{"level":"info","message":"OPTIONS /api/screening/68b05bee32cd19d035db3b34","timestamp":"2025-08-28T16:23:28.674Z"}
+{"level":"info","message":"PUT /api/screening/68b05bee32cd19d035db3b34","timestamp":"2025-08-28T16:23:28.688Z"}
+{"level":"info","message":"attempting sending email to undefined","timestamp":"2025-08-28T16:23:29.238Z"}
+{"level":"error","message":"Failed to send email to undefined: No recipients defined","timestamp":"2025-08-28T16:23:31.455Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T16:23:31.483Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T16:23:31.491Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T16:23:32.137Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T16:24:41.130Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T16:24:41.132Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T16:24:41.138Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T16:24:41.139Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T16:24:41.142Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T16:24:41.143Z"}
+{"level":"error","message":"Error in cleanupExpiredSessions: Operation `chatsessions.updateMany()` buffering timed out after 10000ms","timestamp":"2025-08-28T16:24:51.153Z"}
+{"level":"error","message":"Error during cleanup: Operation `chatsessions.updateMany()` buffering timed out after 10000ms","timestamp":"2025-08-28T16:24:51.155Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T16:25:03.070Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T16:25:03.071Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T16:25:03.073Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T16:25:03.073Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T16:25:03.077Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T16:25:03.077Z"}
+{"level":"info","message":"Cleaned up 0 expired sessions","timestamp":"2025-08-28T16:25:06.545Z"}
+{"level":"info","message":"Cleanup completed: 0 sessions cleaned, 0 active sessions remaining","timestamp":"2025-08-28T16:25:08.856Z"}
+{"level":"info","message":"OPTIONS /api/screening/68b05bee32cd19d035db3b34","timestamp":"2025-08-28T16:25:16.000Z"}
+{"level":"info","message":"PUT /api/screening/68b05bee32cd19d035db3b34","timestamp":"2025-08-28T16:25:16.012Z"}
+{"level":"info","message":"attempting sending email to kparaboj@gmail.com","timestamp":"2025-08-28T16:25:16.672Z"}
+{"level":"info","message":"Email sent to kparaboj@gmail.com: 250 2.0.0 Ok: queued","timestamp":"2025-08-28T16:25:20.227Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T16:25:20.257Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T16:25:20.273Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T16:25:20.896Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T16:27:03.507Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T16:27:03.508Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T16:27:03.510Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T16:27:03.512Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T16:27:03.515Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T16:27:03.515Z"}
+{"level":"error","message":"Error in cleanupExpiredSessions: Operation `chatsessions.updateMany()` buffering timed out after 10000ms","timestamp":"2025-08-28T16:27:13.523Z"}
+{"level":"error","message":"Error during cleanup: Operation `chatsessions.updateMany()` buffering timed out after 10000ms","timestamp":"2025-08-28T16:27:13.523Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T16:27:23.103Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T16:27:23.103Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T16:27:23.108Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T16:27:23.109Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T16:27:23.114Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T16:27:23.115Z"}
+{"level":"error","message":"Error in cleanupExpiredSessions: Operation `chatsessions.updateMany()` buffering timed out after 10000ms","timestamp":"2025-08-28T16:27:33.128Z"}
+{"level":"error","message":"Error during cleanup: Operation `chatsessions.updateMany()` buffering timed out after 10000ms","timestamp":"2025-08-28T16:27:33.129Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T16:28:10.662Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T16:28:10.663Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T16:28:10.666Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T16:28:10.668Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T16:28:10.671Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T16:28:10.671Z"}
+{"level":"info","message":"Cleaned up 0 expired sessions","timestamp":"2025-08-28T16:28:12.528Z"}
+{"level":"info","message":"Cleanup completed: 0 sessions cleaned, 0 active sessions remaining","timestamp":"2025-08-28T16:28:14.128Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T16:28:49.331Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T16:28:49.332Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T16:28:49.335Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T16:28:49.336Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T16:28:49.340Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T16:28:49.341Z"}
+{"level":"error","message":"Error in cleanupExpiredSessions: Operation `chatsessions.updateMany()` buffering timed out after 10000ms","timestamp":"2025-08-28T16:28:59.355Z"}
+{"level":"error","message":"Error during cleanup: Operation `chatsessions.updateMany()` buffering timed out after 10000ms","timestamp":"2025-08-28T16:28:59.356Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T16:29:21.092Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T16:29:21.095Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T16:29:21.098Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T16:29:21.099Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T16:29:21.107Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T16:29:21.107Z"}
+{"level":"info","message":"Cleaned up 0 expired sessions","timestamp":"2025-08-28T16:29:22.907Z"}
+{"level":"info","message":"Cleanup completed: 0 sessions cleaned, 0 active sessions remaining","timestamp":"2025-08-28T16:29:25.178Z"}
+{"level":"info","message":"OPTIONS /api/screening/68b05bee32cd19d035db3b34","timestamp":"2025-08-28T16:29:53.733Z"}
+{"level":"info","message":"PUT /api/screening/68b05bee32cd19d035db3b34","timestamp":"2025-08-28T16:29:53.742Z"}
+{"level":"info","message":"attempting sending email to kparaboj@gmail.com","timestamp":"2025-08-28T16:29:54.374Z"}
+{"level":"info","message":"Email sent to kparaboj@gmail.com: 250 2.0.0 Ok: queued","timestamp":"2025-08-28T16:29:59.904Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T16:29:59.930Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T16:29:59.946Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T16:30:00.707Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T16:31:55.675Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T16:31:55.676Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T16:31:55.678Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T16:31:55.679Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T16:31:55.682Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T16:31:55.682Z"}
+{"level":"error","message":"Error in cleanupExpiredSessions: Operation `chatsessions.updateMany()` buffering timed out after 10000ms","timestamp":"2025-08-28T16:32:05.695Z"}
+{"level":"error","message":"Error during cleanup: Operation `chatsessions.updateMany()` buffering timed out after 10000ms","timestamp":"2025-08-28T16:32:05.695Z"}
+{"level":"info","message":"OPTIONS /api/screening/68b05bee32cd19d035db3b34","timestamp":"2025-08-28T16:32:29.105Z"}
+{"level":"info","message":"PUT /api/screening/68b05bee32cd19d035db3b34","timestamp":"2025-08-28T16:32:29.113Z"}
+{"level":"info","message":"attempting sending email to kparaboj@gmail.com","timestamp":"2025-08-28T16:32:34.021Z"}
+{"level":"info","message":"Email sent to kparaboj@gmail.com: 250 2.0.0 Ok: queued","timestamp":"2025-08-28T16:32:37.830Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T16:32:37.859Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T16:32:37.887Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T16:32:38.558Z"}
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-28T16:33:45.487Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-28T16:33:45.487Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-28T16:33:45.490Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-28T16:33:45.490Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-28T16:33:45.494Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-28T16:33:45.494Z"}
+{"level":"error","message":"Error in cleanupExpiredSessions: Operation `chatsessions.updateMany()` buffering timed out after 10000ms","timestamp":"2025-08-28T16:33:55.508Z"}
+{"level":"error","message":"Error during cleanup: Operation `chatsessions.updateMany()` buffering timed out after 10000ms","timestamp":"2025-08-28T16:33:55.509Z"}
+{"level":"info","message":"OPTIONS /api/screening/68b05bee32cd19d035db3b34","timestamp":"2025-08-28T16:34:07.842Z"}
+{"level":"info","message":"PUT /api/screening/68b05bee32cd19d035db3b34","timestamp":"2025-08-28T16:34:07.857Z"}
+{"level":"info","message":"attempting sending email to kparaboj@gmail.com","timestamp":"2025-08-28T16:34:19.663Z"}
+{"level":"info","message":"Email sent to kparaboj@gmail.com: 250 2.0.0 Ok: queued","timestamp":"2025-08-28T16:34:23.205Z"}
+{"level":"info","message":"OPTIONS /api/screening","timestamp":"2025-08-28T16:34:23.224Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T16:34:23.237Z"}
+{"level":"info","message":"GET /api/screening","timestamp":"2025-08-28T16:34:23.954Z"}

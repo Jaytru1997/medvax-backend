@@ -881,9 +881,7 @@ END CONFIG STYLES
                                             cellspacing="0" width="600">
                                             <tbody>
                                                 <tr>
-                                                    <td class="esd-structure es-p40" align="left"
-                                                        background="https://cdn-gujg.onrender.com/asset/img/glass-building.jpg"
-                                                        style="background-image: url(https://cdn-gujg.onrender.com/asset/img/glass-building.jpg); background-repeat: no-repeat; background-position: center top;">
+                                                    <td class="esd-structure es-p40" align="left">
                                                         <!--[if mso]><table width="520" cellpadding="0"
                             cellspacing="0"><tr><td width="156" valign="top"><![endif]-->
                                                         <table cellpadding="0" cellspacing="0" class="es-left"
@@ -906,7 +904,7 @@ END CONFIG STYLES
                                                                                                 .env
                                                                                                 .URL
                                                                                             }"><img
-                                                                                                src="https://cdn-gujg.onrender.com/asset/logo/_.png"
+                                                                                                src="https://medvaxhealth.com/asset/logo/logo-nav.svg"
                                                                                                 alt
                                                                                                 style="display: block;"
                                                                                                 height="60"></a></td>
@@ -1066,7 +1064,7 @@ END CONFIG STYLES
                                                                                                 .env
                                                                                                 .URL
                                                                                             }"><img
-                                                                                                src="https://cdn-gujg.onrender.com/asset/logo/_.png"
+                                                                                                src="https://medvaxhealth.com/asset/logo/logo.svg"
                                                                                                 alt="Customer Success Team"
                                                                                                 style="display: block;"
                                                                                                 width="95"
@@ -1137,9 +1135,7 @@ END CONFIG STYLES
                                             <tbody>
                                                 <tr>
                                                     <td class="esd-structure es-p30t es-p30b es-p40r es-p40l"
-                                                        align="left"
-                                                        background="https://cdn-gujg.onrender.com/asset/img/glass-building.jpg"
-                                                        style="background-image: url(https://cdn-gujg.onrender.com/asset/img/glass-building.jpg); background-repeat: no-repeat; background-position: center top;">
+                                                        align="left">
                                                         <!--[if mso]><table width="520" cellpadding="0" cellspacing="0"><tr><td width="194" valign="top"><![endif]-->
                                                         <table cellpadding="0" cellspacing="0" align="left"
                                                             class="es-left">
@@ -1161,7 +1157,7 @@ END CONFIG STYLES
                                                                                                 .env
                                                                                                 .URL
                                                                                             }"><img
-                                                                                                src="https://cdn-gujg.onrender.com/asset/logo/_.png"
+                                                                                                src="https://medvaxhealth.com/asset/logo/logo-nav.svg"
                                                                                                 alt
                                                                                                 style="display: block;"
                                                                                                 height="60"></a></td>

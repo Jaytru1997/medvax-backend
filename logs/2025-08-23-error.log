@@ -1,0 +1,8 @@
+{"level":"info","message":"Starting production services initialization...","timestamp":"2025-08-23T19:55:39.481Z"}
+{"level":"info","message":"Starting scheduled cleanup...","timestamp":"2025-08-23T19:55:39.482Z"}
+{"level":"info","message":"Cleanup service started with 60 minute interval","timestamp":"2025-08-23T19:55:39.487Z"}
+{"level":"info","message":"Cleanup service initialized","timestamp":"2025-08-23T19:55:39.488Z"}
+{"level":"info","message":"All production services initialized successfully","timestamp":"2025-08-23T19:55:39.492Z"}
+{"level":"info","message":"Production services initialized successfully","timestamp":"2025-08-23T19:55:39.492Z"}
+{"level":"error","message":"Error in cleanupExpiredSessions: Operation `chatsessions.updateMany()` buffering timed out after 10000ms","timestamp":"2025-08-23T19:55:49.505Z"}
+{"level":"error","message":"Error during cleanup: Operation `chatsessions.updateMany()` buffering timed out after 10000ms","timestamp":"2025-08-23T19:55:49.506Z"}
