@@ -10,8 +10,8 @@ const medicationRoutes = require("./src/routes/medicationRoutes");
 const bookingRoutes = require("./src/routes/bookingRoutes");
 const paymentRoutes = require("./src/routes/paymentRoutes");
 const crmRoutes = require("./src/routes/crmRoutes");
-const chatbotRoutes = require("./src/routes/chatbotRoutes");
-const adminRoutes = require("./src/routes/adminRoutes");
+// const chatbotRoutes = require("./src/routes/chatbotRoutes");
+// const adminRoutes = require("./src/routes/adminRoutes");
 const blogRoutes = require("./src/routes/blogRoutes");
 const teamMemberRoutes = require("./src/routes/teamMemberRoutes");
 const screeningRoutes = require("./src/routes/screeningRoutes");
@@ -41,6 +41,38 @@ app.use((req, res, next) => {
 // Middleware
 app.use(express.json());
 app.use(cors());
+
+app.use(function (req, res, next) {
+  const allowedOrigins = ["http://localhost:5173", "https://medvaxhealth.com"];
+  // const allowedOrigins = ["*"];
+
+  const origin = req.headers.origin;
+
+  if (allowedOrigins.includes(origin)) {
+    // Website you wish to allow to connect
+    res.setHeader("Access-Control-Allow-Origin", origin);
+  }
+
+  // Request methods you wish to allow
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+  );
+
+  // Request headers you wish to allow
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "X-Requested-With,content-type, Accept, Authorization"
+  );
+
+  // Set to true if you need the website to include cookies in the requests sent
+  // to the API (e.g. in case you use sessions)
+  res.setHeader("Access-Control-Allow-Credentials", true);
+
+  // Pass to next layer of middleware
+  next();
+});
+
 app.use(helmet());
 app.use(morgan("dev"));
 app.use(
@@ -57,8 +89,8 @@ app.use("/api/medications", medicationRoutes);
 app.use("/api/bookings", bookingRoutes);
 app.use("/api/payments", paymentRoutes);
 app.use("/api/crm", crmRoutes);
-app.use("/api/chatbot", chatbotRoutes);
-app.use("/api/admin", adminRoutes);
+// app.use("/api/chatbot", chatbotRoutes);
+// app.use("/api/admin", adminRoutes);
 app.use("/api/blog", blogRoutes);
 app.use("/api/team-members", teamMemberRoutes);
 app.use("/api/screening", screeningRoutes);
